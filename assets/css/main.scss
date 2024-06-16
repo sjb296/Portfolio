@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:visited {
@@ -44,8 +44,49 @@ a:visited {
     transform: translate(-150px);
 }
 
+.gradient-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //width: 50vw;
+    margin: auto;
+    max-width: 8.5em;
+  
+    position: relative;
+    box-sizing: border-box;
+  
+    $border: 5px;
+    color: #000;
+    background: #FFF;
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+    border-radius: 1em;
+  
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -$border; /* !importanté */
+      border-radius: inherit; /* !importanté */
+      background: linear-gradient(to right, skyblue, lightblue);
+    }
+  }
+
+.call-to-action {
+    font-size: 28pt;
+    color: $bodyColor;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
 .bio-text {
     font-size: 44pt;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 #links {
