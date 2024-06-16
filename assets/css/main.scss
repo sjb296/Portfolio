@@ -18,23 +18,34 @@ header {
         li {
             display: inline;
             margin-right: 30px;
-
-            a {
-                color: $bodyColor;
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
         }
     }
 }
 
+a {
+    color: $linkColor;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: $linkColor;
+}
+
 #homepage-hero {
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    transform: translate(-150px);
+}
+
+.bio-text {
+    font-size: 44pt;
 }
 
 #links {
@@ -48,11 +59,15 @@ header {
     padding-right: 10px;
 }
 
-.name-word {
-    font-size: xx-large;
+#name {
+    text-align: left;
 }
 
-.name-word::first-letter {
+.name-word {
+    font-size: 72pt;
+}
+
+.name-first-letter {
     color: red;
 }
 
