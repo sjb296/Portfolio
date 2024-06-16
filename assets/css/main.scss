@@ -29,3 +29,41 @@ header {
         }
     }
 }
+
+#homepage-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#links > div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.name-word {
+    font-size: xx-large;
+}
+
+.name-word::first-letter {
+    color: red;
+}
+
+#project-pane-1 {
+    transform: translate(100px, 50px);
+}
+
+#project-pane-2 {
+    transform: translate(150px, -50px);
+}
+
+#project-pane-3 {
+    transform: translate(200px, -100px);
+}

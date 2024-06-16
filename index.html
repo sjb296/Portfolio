@@ -3,23 +3,23 @@ layout: home
 title: "Happy Jekylling!"
 ---
 
-<div id="homepage-first-row">
+<div id="homepage-hero">
     <!-- Name -->
-    <div id="name">
+    <div id="name" class="hero-col">
         <div class="name-word">Samuel</div>
         <div class="name-word">Juul</div>
         <div class="name-word">Barker</div>
     </div>
 
     <!-- Project panes -->
-    <div id="project-panes">
-        <div class="project-pane">
+    <div id="project-panes" class="hero-col">
+        <div id="project-pane-1">
             <img src="https://picsum.photos/400/200" alt="A random image.">
         </div>
-        <div class="project-pane">
+        <div id="project-pane-2">
             <img src="https://picsum.photos/400/200" alt="A random image.">
         </div>
-        <div class="project-pane">
+        <div id="project-pane-3">
             <img src="https://picsum.photos/400/200" alt="A random image.">
         </div>
     </div>
@@ -29,20 +29,24 @@ title: "Happy Jekylling!"
 <a class="call-to-action" href="mailto:{{ site.email }}">Work with me</a>
 
 <!-- Links -->
+<h2>Interested? Check out...</h2>
 <div id="links">
-    <h2>Interested? Check out...</h2>
-    <a href="/projects">Projects</a>
-    <a href="/cv">CV</a>
     <div>
-        <i class="fas fa-github"></i>
+        <a href="/projects">Projects</a>
+    </div>
+    <div>
+        <a href="/cv">CV</a>
+    </div>
+    <div>
+        <i class="fa fa-github"></i>
         <a href="https://github.com/{{ site.github }}">Github</a>
     </div>
     <div>
-        <i class="fas fa-linkedin"></i>
+        <i class="fa fa-linkedin"></i>
         <a href="https://linkedin.com/in/{{ site.linkedin }}">LinkedIn</a>
     </div>
     <div>
-        <i class="fas fa-envelope"></i>
+        <i class="fa fa-envelope"></i>
         <a href="mailto:{{ site.email }}">Email</a>
     </div>
 </div>
