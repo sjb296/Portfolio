@@ -1,0 +1,48 @@
+---
+---
+
+@import "base";
+
+$linkColor: #007bff;
+
+/* Element selectors */
+
+body {
+    /* Use linear-gradient for a smooth transition of colors */
+    background: linear-gradient(to bottom, #ffffff, #eeeeee);
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+main {
+    font-size: 16pt;
+    padding: 20px;
+}
+
+nav {
+    a {
+        color: $linkColor;
+        text-decoration: none;
+    }
+    a:visited {
+        color: $linkColor;
+    }
+}
+
+/* Class selectors */
+
+.blog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.profile-container {
+    flex-basis: 20%;
+}
+
+.blog-content {
+    flex-basis: 60%;
+}
