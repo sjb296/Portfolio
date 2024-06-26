@@ -4,6 +4,14 @@
 @import "base";
 
 /* Element selectors */
+body {
+    /* Use linear-gradient for a smooth transition of colors */
+    background: linear-gradient(to bottom, #ffffff, #eeeeee);
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 100vh;
+}
+
 a {
     color: $linkColor;
     text-decoration: none;
@@ -36,10 +44,6 @@ header {
     }
 }
 
-h2 {
-    margin-top: 30px;
-}
-
 /* Class selectors */
 .bio-text {
     font-size: 44pt;
@@ -48,12 +52,27 @@ h2 {
 }
 
 .name-first-letter {
-    text-shadow: 1px 1px #fe4902, 
-                 2px 2px #fe4902, 
-                 3px 3px #fe4902, 
-                 4px 4px #fe4902, 
-                 5px 5px #fe4902, 
-                 6px 6px #fe4902;
+    // text-shadow: 1px 1px #fe4902, 
+    //              2px 2px #fe4902, 
+    //              3px 3px #fe4902, 
+    //              4px 4px #fe4902, 
+    //              5px 5px #fe4902, 
+    //              6px 6px #fe4902;
+    text-shadow: 1px 1px #000000, 
+                 2px 2px #000000, 
+                 3px 3px #000000, 
+                 4px 4px #000000, 
+                 5px 5px #000000, 
+                 6px 6px #000000;
+
+    font-size: 72pt;
+    -webkit-text-stroke: 2px black;
+    color: white;
+
+    font-size: 80pt;
+}
+
+.name-word {
     font-size: 80pt;
 }
 
@@ -92,14 +111,23 @@ h2 {
 }
 
 #links {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-#links > div {
-    padding-left: 10px;
-    padding-right: 10px;
+    div {
+        padding-left: 10px;
+        padding-right: 10px;    
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    h2 {
+        font-size: xx-large;
+        margin-top: 0px;
+    }
+    a {
+        font-size: x-large;
+        padding-left: 5px;
+        // font-size: larger;
+    }
+    
 }
 
 #name {
@@ -116,13 +144,4 @@ h2 {
 
 #project-pane-3 {
     transform: translate(200px, -100px);
-}
-
-/* Pseudo-class selectors */
-@supports (-webkit-text-stroke: 2px black) {
-    .name-word {
-        font-size: 72pt;
-        -webkit-text-stroke: 2px black;
-        color: white;
-    }
 }
