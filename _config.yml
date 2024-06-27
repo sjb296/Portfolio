@@ -3,6 +3,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Sam Barker" # the name of your site, e.g. ACME Corp.
 
 email: "sambarker247@gmail.com"
+github: "sjb296"
+linkedin: "sam-barker-"
 
 sass:
   sass_dir: _sass
