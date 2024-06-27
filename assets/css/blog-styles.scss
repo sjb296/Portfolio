@@ -10,7 +10,6 @@ $deemphasisedColour: #666;
 /* Element selectors */
 
 body {
-    /* Use linear-gradient for a smooth transition of colors */
     background: linear-gradient(to bottom, #ffffff, #eeeeee);
     background-attachment: scroll;
     background-size: cover;
@@ -44,6 +43,13 @@ hr {
 
 /* Class selectors */
 
+.profile-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
 .blog-container {
     display: flex;
     flex-direction: row;
@@ -53,6 +59,10 @@ hr {
 
 .profile-container {
     flex-basis: 20%;
+
+    h2 {
+        margin-bottom: 10px;
+    }
 }
 
 .blog-content {
@@ -70,3 +80,19 @@ hr {
     }
 }
 
+/* ID selectors */
+
+#header-homepage-letter {
+    text-shadow: 1px 1px $bodyColor, 
+                 2px 2px $bodyColor, 
+                 3px 3px $bodyColor, 
+                 4px 4px $bodyColor;
+
+    -webkit-text-stroke: 1px $bodyColor;
+    color: $backgroundColor;
+    font-size: xx-large;
+}
+
+#headshot {
+    max-width: 400px;
+}

@@ -3,6 +3,10 @@
 
 @import "base";
 
+$backgroundColor: white;
+$bodyColor: #333;
+$deemphasisedColour: #666;
+
 /* Element selectors */
 body {
     /* Use linear-gradient for a smooth transition of colors */
@@ -60,16 +64,16 @@ header {
     //              4px 4px #fe4902, 
     //              5px 5px #fe4902, 
     //              6px 6px #fe4902;
-    text-shadow: 1px 1px #000000, 
-                 2px 2px #000000, 
-                 3px 3px #000000, 
-                 4px 4px #000000, 
-                 5px 5px #000000, 
-                 6px 6px #000000;
+    text-shadow: 1px 1px $bodyColor, 
+                 2px 2px $bodyColor, 
+                 3px 3px $bodyColor, 
+                 4px 4px $bodyColor, 
+                 5px 5px $bodyColor, 
+                 6px 6px $bodyColor;
 
     font-size: 72pt;
-    -webkit-text-stroke: 2px black;
-    color: white;
+    -webkit-text-stroke: 2px $bodyColor;
+    color: $backgroundColor;
 
     font-size: 80pt;
 }
