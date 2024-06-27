@@ -5,6 +5,7 @@
 
 $linkColour: #007bff;
 $bodyColour: #333;
+$deemphasisedColour: #666;
 
 /* Element selectors */
 
@@ -29,6 +30,10 @@ nav {
     a:visited {
         color: $linkColour;
     }
+}
+
+small {
+    color: $deemphasisedColour;
 }
 
 /* Class selectors */
@@ -58,3 +63,4 @@ nav {
         color: $bodyColour;
     }
 }
+
