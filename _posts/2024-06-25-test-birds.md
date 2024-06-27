@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Bird conservation status: Do neural networks agree with the experts?"
 author: Sam
 ---

@@ -1,0 +1,13 @@
+---
+layout: profile-and-content
+---
+
+<div class="blog-post">
+    <h1 class="blog-post-title">{{ page.title }}</h1>
+    <div class="blog-post-meta">
+        <small>{{ page.date | date: "%B %-d, %Y" }}</small>
+        <small>&middot;</small>
+        <small><i class="fa fa-clock-o"></i> {{ content | reading_time }}</small>
+    </div>
+    <p>{{ content }}</p>
+</div>
