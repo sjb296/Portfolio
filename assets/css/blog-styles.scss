@@ -36,6 +36,12 @@ small {
     color: $deemphasisedColour;
 }
 
+hr {
+    border: 0;
+    border-top: 1px solid #aaa; // more grey than black
+    margin: 20px 0;
+}
+
 /* Class selectors */
 
 .blog-container {
