@@ -3,7 +3,8 @@
 
 @import "base";
 
-$linkColor: #007bff;
+$linkColour: #007bff;
+$bodyColour: #333;
 
 /* Element selectors */
 
@@ -22,11 +23,11 @@ main {
 
 nav {
     a {
-        color: $linkColor;
+        color: $linkColour;
         text-decoration: none;
     }
     a:visited {
-        color: $linkColor;
+        color: $linkColour;
     }
 }
 
@@ -45,4 +46,15 @@ nav {
 
 .blog-content {
     flex-basis: 60%;
+}
+
+.blog-post-title {
+    margin-bottom: 0;
+
+    a {
+        color: $bodyColour;
+    }
+    a::visited {
+        color: $bodyColour;
+    }
 }

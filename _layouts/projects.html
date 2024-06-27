@@ -15,7 +15,7 @@ layout: default
             <div class="blog-post-meta">
                 <small>{{ post.date | date: "%B %-d, %Y" }}</small>
                 <small>&middot;</small>
-                <small>{{ post.content | reading_time }}</small>
+                <small><i class="fa fa-clock-o"></i> {{ post.content | reading_time }}</small>
             </div>
             <p>{{ post.excerpt }}</p>
         </div>
