@@ -50,6 +50,13 @@ header {
     }
 }
 
+footer {
+    color: $deemphasisedColour;
+    font-family: $bodyFont;
+    font-size: small;
+    padding: 0 10px;
+}
+
 /* Class selectors */
 .bio-text {
     font-size: 44pt;
