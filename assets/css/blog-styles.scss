@@ -73,6 +73,19 @@ hr {
     flex-basis: 60%;
 }
 
+// Centre images within post body
+.blog-post {
+    // Jekyll puts images inside <p> tags so select <p>s with an <img> inside
+    p:has(> img) {
+        text-align: center;
+    }
+
+    p > img {
+        margin: auto;
+        max-width: 100%;
+    }
+}
+
 .blog-post-title {
     margin-bottom: 0;
 
