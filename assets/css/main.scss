@@ -115,12 +115,13 @@ footer {
 
 /* ID selectors */
 #homepage-hero {
-    padding-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    transform: translate(-150px);
+    gap: 100px;
 }
 
 #links {
@@ -147,18 +148,42 @@ footer {
     text-align: left;
 }
 
-#project-panes > * {
-    box-shadow: 5px 5px 10px #000;
+// Image stack
+// https://codepen.io/brianacamp/pen/QWWOwdM
+.image-stack {
+    display: grid;
+    position: relative; // imperative for the overlapping to work
+    grid-template-columns: repeat(16, 1fr);
+
+    * {
+        max-width: 600px;
+    }
+
+    * > img {
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+}
+  
+.image-stack__item--3 {
+    grid-column: 1 / span 12;
+    grid-row: 1;
 }
 
-#project-pane-1 {
-    transform: translate(100px, 50px);
+.image-stack__item--2 {
+    grid-row: 1;
+    grid-column: 3 / span 12;
+    padding-top: 20%;
 }
 
-#project-pane-2 {
-    transform: translate(150px, -50px);
+.image-stack__item--1 {
+    grid-row: 1;
+    grid-column: 5 / span 12;
+    padding-top: 40%;
 }
 
-#project-pane-3 {
-    transform: translate(200px, -100px);
+img {
+    width: 100%;
+    display: block;
 }

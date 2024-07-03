@@ -23,11 +23,11 @@ main {
 
 nav {
     a {
-        color: $linkColour;
+        color: $bodyColor;
         text-decoration: none;
     }
     a:visited {
-        color: $linkColour;
+        color: $bodyColor;
     }
 }
 
