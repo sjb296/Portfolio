@@ -3,14 +3,16 @@
 
 @import "base";
 
-$backgroundColor: white;
-$bodyColor: #333;
+$backgroundColour: white;
+$bodyColour: #333;
 $deemphasisedColour: #666;
+$gradientStartColour: #ffffff;
+$gradientEndColour: #f3fbff;
 
 /* Element selectors */
 body {
-    /* Use linear-gradient for a smooth transition of colors */
-    background: linear-gradient(to bottom, #ffffff, #eeeeee);
+    /* Use linear-gradient for a smooth transition of Colours */
+    background: linear-gradient(to bottom, $gradientStartColour, $gradientEndColour);
     background-attachment: scroll;
     background-size: cover;
     min-height: 100vh;
@@ -20,7 +22,7 @@ body {
 }
 
 a {
-    color: $linkColor;
+    color: $linkColour;
     text-decoration: none;
 }
 
@@ -29,12 +31,12 @@ a:hover {
 }
 
 a:visited {
-    color: $linkColor;
+    color: $linkColour;
 }
 
 header {
-    background: $backgroundColor;
-    color: $bodyColor;
+    background: $backgroundColour;
+    color: $bodyColour;
     font-family: $bodyFont;
     font-size: x-large;
     padding: 20px 20px;
@@ -72,16 +74,16 @@ footer {
     //              4px 4px #fe4902, 
     //              5px 5px #fe4902, 
     //              6px 6px #fe4902;
-    text-shadow: 1px 1px $bodyColor, 
-                 2px 2px $bodyColor, 
-                 3px 3px $bodyColor, 
-                 4px 4px $bodyColor, 
-                 5px 5px $bodyColor, 
-                 6px 6px $bodyColor;
+    text-shadow: 1px 1px $bodyColour, 
+                 2px 2px $bodyColour, 
+                 3px 3px $bodyColour, 
+                 4px 4px $bodyColour, 
+                 5px 5px $bodyColour, 
+                 6px 6px $bodyColour;
 
     font-size: 72pt;
-    -webkit-text-stroke: 2px $bodyColor;
-    color: $backgroundColor;
+    -webkit-text-stroke: 2px $bodyColour;
+    color: $backgroundColour;
 
     font-size: 80pt;
 }
@@ -197,7 +199,7 @@ footer {
 .top-info-banner {
     margin: 0;
     text-align: center;
-    background: linear-gradient(to top, #ffffff, #eeeeee);
+    background: linear-gradient(to top, #ffffff, #f3fbff);
     padding-top: 16px;
 }
 
