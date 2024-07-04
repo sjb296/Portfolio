@@ -1,5 +1,5 @@
-document.addEventListener('mousemove', (e) => {
-    const images = document.querySelectorAll('.image-stack__item');
+document.addEventListener("mousemove", (e) => {
+    const images = document.querySelectorAll(".image-stack__item");
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
 

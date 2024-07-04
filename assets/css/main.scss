@@ -63,6 +63,11 @@ hr {
     margin: 20px 0;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
 /* Class selectors */
 .bio-text {
     font-size: 44pt;
@@ -179,6 +184,7 @@ hr {
     img {
         transition: transform 0.2s ease;
         transform-style: preserve-3d;
+        border-radius: 10px;
     }
 }
   
@@ -210,7 +216,24 @@ hr {
     background: linear-gradient(to top, #ffffff, #f3fbff);
 }
 
-img {
-    width: 100%;
-    display: block;
+// .bio-text {
+//     color: $deemphasisedColour;
+// }
+
+.typewriter {
+    //font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.1em solid $deemphasisedColour;
+    animation: caret 0.75s step-end infinite;
+
+    // gradient text
+    background-image: linear-gradient(skyblue, cornflowerblue);
+    color: transparent;
+    background-clip: text;
+}
+
+@keyframes caret {
+    from, to { border-color: transparent; }
+    50% { border-color: $deemphasisedColour; }
 }
