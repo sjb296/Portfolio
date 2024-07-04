@@ -166,6 +166,16 @@ footer {
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     }
 }
+
+[class^="image-stack__item"] {
+    // Setup for looking-towards-mouse 3D transformation
+    perspective: 1000px;
+
+    img {
+        transition: transform 0.2s ease;
+        transform-style: preserve-3d;
+    }
+}
   
 .image-stack__item--3 {
     grid-column: 1 / span 12;
