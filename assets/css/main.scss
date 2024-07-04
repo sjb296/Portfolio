@@ -139,6 +139,7 @@ img {
 // https://codepen.io/brianacamp/pen/QWWOwdM
 .image-stack {
     display: grid;
+    align-items: start;
     position: relative; // imperative for the overlapping to work
     grid-template-columns: repeat(16, 1fr);
 
@@ -151,20 +152,17 @@ img {
     }
 }
 
-[class^="image-stack__item"] {
+.image-stack__item {
+    position: relative;
     // Setup for looking-towards-mouse 3D transformation
     perspective: 1000px;
-
-    img {
-        transition: transform 0.2s ease;
-        transform-style: preserve-3d;
-        border-radius: 10px;
-    }
+    transition: scale 0.2s ease;
+    transform-style: preserve-3d;
 }
   
 .image-stack__item--3 {
-    grid-column: 1 / span 12;
     grid-row: 1;
+    grid-column: 1 / span 12;
 }
 
 .image-stack__item--2 {
@@ -177,6 +175,55 @@ img {
     grid-row: 1;
     grid-column: 5 / span 12;
     padding-top: 40%;
+}
+
+// Container for the image and the text overlay
+.image-with-text {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+// The text with background that appears when you hover
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+    opacity: 0;
+    transition: .5s ease;
+
+    font-size: 48pt;
+    font-weight: bold;
+
+    a {
+        color: $backgroundColour;
+        -webkit-text-stroke: 1px $bodyColour;
+    }
+}
+
+.overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(1.0, 1.0, 1.0, 0.3);
+}
+
+// Fade in
+.image-and-text:hover .overlay-text {
+    opacity: 1;
+}
+
+.image-and-text:hover .overlay-bg {
+    opacity: 1;
 }
 
 .top-info-banner {
