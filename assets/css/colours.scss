@@ -4,3 +4,9 @@ $deemphasisedColour: #666;
 $gradientStartColour: #ffffff;
 $gradientEndColour: #fbfeff;
 $linkColour: #007bff;
+
+@mixin blue-grad {
+    background-image: linear-gradient(skyblue, cornflowerblue);
+    color: transparent;
+    background-clip: text;
+}

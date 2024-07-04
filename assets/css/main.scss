@@ -19,7 +19,7 @@ body {
 }
 
 a {
-    color: $linkColour;
+    @include blue-grad;
     text-decoration: none;
 }
 
@@ -28,7 +28,7 @@ a:hover {
 }
 
 a:visited {
-    color: $linkColour;
+    @include blue-grad;
 }
 
 header {
@@ -99,30 +99,6 @@ img {
 .name-word {
     font-size: 80pt;
 }
-
-.btn-grad {
-    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
-    margin: 10px 0 20px 0;
-    padding: 20px 45px 10px 45px;
-    text-align: center;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    font-weight: bold;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 20px;
-    font-size: 28pt;
-    display: inline-flex;
-    align-items: center;
-    line-height: 28pt;
-}
-
-.btn-grad:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-}
-
 
 /* ID selectors */
 #homepage-hero {
@@ -226,11 +202,10 @@ img {
     overflow: hidden;
     border-right: 0.1em solid $deemphasisedColour;
     animation: caret 0.75s step-end infinite;
+}
 
-    // gradient text
-    background-image: linear-gradient(skyblue, cornflowerblue);
-    color: transparent;
-    background-clip: text;
+.grad-text {
+    @include blue-grad;
 }
 
 @keyframes caret {
