@@ -2,15 +2,13 @@
 ---
 
 @import "base";
+@import "colours";
 
-$linkColour: #007bff;
-$bodyColour: #333;
-$deemphasisedColour: #666;
 
 /* Element selectors */
 
 body {
-    background: linear-gradient(to bottom, #ffffff, #eeeeee);
+    background: linear-gradient(to bottom, $gradientStartColour, $gradientEndColour);
     background-attachment: scroll;
     background-size: cover;
     min-height: 100vh;
@@ -23,11 +21,11 @@ main {
 
 nav {
     a {
-        color: $bodyColor;
+        color: $bodyColour;
         text-decoration: none;
     }
     a:visited {
-        color: $bodyColor;
+        color: $bodyColour;
     }
 }
 
@@ -100,13 +98,13 @@ hr {
 /* ID selectors */
 
 #header-homepage-letter {
-    text-shadow: 1px 1px $bodyColor, 
-                 2px 2px $bodyColor, 
-                 3px 3px $bodyColor, 
-                 4px 4px $bodyColor;
+    text-shadow: 1px 1px $bodyColour, 
+                 2px 2px $bodyColour, 
+                 3px 3px $bodyColour, 
+                 4px 4px $bodyColour;
 
-    -webkit-text-stroke: 1px $bodyColor;
-    color: $backgroundColor;
+    -webkit-text-stroke: 1px $bodyColour;
+    color: $backgroundColour;
     font-size: xx-large;
 }
 
