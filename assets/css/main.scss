@@ -196,12 +196,11 @@ img {
     opacity: 0;
     transition: .5s ease;
 
-    font-size: 48pt;
+    font-size: 38pt;
     font-weight: bold;
 
     a {
         color: $backgroundColour;
-        -webkit-text-stroke: 1px $bodyColour;
     }
 }
 
