@@ -123,6 +123,7 @@ img {
         font-size: xx-large;
         margin-top: 0;
         padding-top: 0;
+        margin-bottom: 10px;
     }
     a {
         font-size: x-large;
@@ -258,6 +259,16 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.fade-in {
+    // Fade-in effect
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.fade-in-visible {
+    opacity: 1;
 }
 
 @keyframes caret {
