@@ -88,19 +88,9 @@ hr {
     margin-bottom: 0;
 }
 
-// On phones, flex goes in a column and the author profile goes after content
-@media (max-width: 768px) {
-    .blog-container {
-      flex-direction: column;
-    }
-    .blog-content {
-      order: 1;
-    }
-    .profile-container {
-      order: 2;
-    }
-  }
-  
+.blog-post-after-title {
+    padding: 0 10px;
+}
 
 .banner {
     position: relative;
@@ -108,6 +98,7 @@ hr {
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
+    height: auto;
 }
 
 .banner-image {
@@ -145,6 +136,24 @@ hr {
 .banner-text h1 {
     font-size: 3em;
     margin: 0;
+}
+
+@media (max-width: 600px) {
+    // On phones, flex goes in a column and the author profile goes after content
+    .blog-container {
+      flex-direction: column;
+    }
+    .blog-content {
+      order: 1;
+    }
+    .profile-container {
+      order: 2;
+    }
+
+    .banner-image {
+        max-height: 200px;
+
+    }
 }
 
 /* ID selectors */

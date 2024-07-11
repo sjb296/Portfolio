@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Detecting linear motion at 78% accuracy with just an accelerometer: an undergrad dissertation"
+title: "Detecting linear motion at 78% accuracy with just an accelerometer"
 author: Sam
 banner: "/assets/img/home/dissertation-collage-homepage.png"
 ---

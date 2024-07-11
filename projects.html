@@ -11,12 +11,14 @@ title: "Projects"
             <h2 class="blog-post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         </div>
     </div>
-    <div class="blog-post-meta">
-        <small>{{ post.date | date: "%B %-d, %Y" }}</small>
-        <small>&middot;</small>
-        <small><i class="fa fa-clock-o"></i> {{ post.content | reading_time }}</small>
+    <div class="blog-post-after-title">
+        <div class="blog-post-meta">
+            <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+            <small>&middot;</small>
+            <small><i class="fa fa-clock-o"></i> {{ post.content | reading_time }}</small>
+        </div>
+        <p>{{ post.excerpt }}</p>
     </div>
-    <p>{{ post.excerpt }}</p>
 </div>
 {% if forloop.last == false %}
 <hr>

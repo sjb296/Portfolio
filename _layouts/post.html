@@ -9,10 +9,12 @@ layout: profile-and-content
             <h2 class="blog-post-title">{{ page.title }}</h2>
         </div>
     </div>
-    <div class="blog-post-meta">
-        <small>{{ page.date | date: "%B %-d, %Y" }}</small>
-        <small>&middot;</small>
-        <small><i class="fa fa-clock-o"></i> {{ content | reading_time }}</small>
+    <div class="blog-post-after-title">
+        <div class="blog-post-meta">
+            <small>{{ page.date | date: "%B %-d, %Y" }}</small>
+            <small>&middot;</small>
+            <small><i class="fa fa-clock-o"></i> {{ content | reading_time }}</small>
+        </div>
+        <p>{{ content }}</p>
     </div>
-    <p>{{ content }}</p>
 </div>
