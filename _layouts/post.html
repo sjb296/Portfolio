@@ -3,7 +3,12 @@ layout: profile-and-content
 ---
 
 <div class="blog-post">
-    <h1 class="blog-post-title">{{ page.title }}</h1>
+    <div class="banner">
+        <img src="{{ page.banner }}" alt="Banner image." class="banner-image">
+        <div class="banner-text">
+            <h2 class="blog-post-title">{{ page.title }}</h2>
+        </div>
+    </div>
     <div class="blog-post-meta">
         <small>{{ page.date | date: "%B %-d, %Y" }}</small>
         <small>&middot;</small>

@@ -88,6 +88,20 @@ hr {
     margin-bottom: 0;
 }
 
+// On phones, flex goes in a column and the author profile goes after content
+@media (max-width: 768px) {
+    .blog-container {
+      flex-direction: column;
+    }
+    .blog-content {
+      order: 1;
+    }
+    .profile-container {
+      order: 2;
+    }
+  }
+  
+
 .banner {
     position: relative;
     width: 100%;
