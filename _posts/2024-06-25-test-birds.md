@@ -2,6 +2,7 @@
 layout: post
 title: "Bird conservation status: Do neural networks agree with the experts?"
 author: Sam
+banner: "/assets/img/home/birds-collage-homepage-bigger.png"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo eget neque venenatis rhoncus. Aenean

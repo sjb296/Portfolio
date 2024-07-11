@@ -13,3 +13,5 @@ sass:
 
 plugins:
   - jekyll-redirect-from
+
+permalink: /:slug
